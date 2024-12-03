@@ -1,0 +1,37 @@
+/*
+Rookognition - A web-based chess vision exercise.
+Copyright (C) 2024 Nick Edner
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+html { font-family: sans-serif; background: #eee; height: 100%; }
+body { margin: 0 0 0 0; background: white; height: 100%; display: flex; flex-direction: column; }
+h1 { font-family: serif; color: #377ba8; margin: 1rem 0; }
+hr { border: none; border-top: 1px solid lightgray; }
+nav { background: lightgray; display: flex; align-items: center; padding: 0 0.5rem; flex-direction: row; }
+nav h1 { margin: 0; }
+nav h1 a { text-decoration: none; padding: 0.25rem 0.5rem; }
+nav > .topnav { display: flex; flex-direction: row; align-items: inherit; justify-content: space-between; flex-grow: 1; }
+nav > .topnav > .score { display: flex; font-size: 0.8em; justify-content: space-evenly; flex-grow: 1; }
+.flash { margin: 1em 0; padding: 1em; background: #cae6f6; border: 1px solid #377ba8; }
+.content { padding: 1rem; flex-grow: 2; max-height: 70vh; }
+.content > svg { height: 100%; width: 100%; }
+.controller { font-size: calc(0.6em + 2vh); flex-direction: column; justify-content: space-evenly; flex-grow: 1; }
+.controller > form { width: 100%; display: flex; flex-direction: column; }
+.controller > form > input { min-width: 0; }
+footer { font-size: calc(0.1em + 1vh); }
+.dual-pane { display: flex; flex-grow: 1; flex-direction: row; }
+@media (max-width: 500px) {
+  .dual-pane { flex-direction: column; }
+}
